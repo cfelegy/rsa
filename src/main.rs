@@ -1,5 +1,6 @@
 mod crypt;
 mod key;
+mod math;
 
 fn main() {
     let pubkey = key::PublicKey {

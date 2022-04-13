@@ -5,7 +5,7 @@
 #[derive(Clone, Copy)]
 pub struct PublicKey {
     pub modulus: u64, // n
-    pub public_exponent: u32 // e
+    pub public_exponent: u64 // e
 }
 
 /// An RFC3447 RSA Private Key
@@ -13,8 +13,8 @@ pub struct PublicKey {
 pub struct PrivateKey {
     pub version: u8,
     pub modulus: u64, // n
-    pub public_exponent: u32, // e
-    pub private_exponent: u32, // d
+    pub public_exponent: u64, // e
+    pub private_exponent: u64, // d
     pub prime_1: u32, // p
     pub prime_2: u32, // q
     pub exponent_1: u32, // d mod (p-1)
